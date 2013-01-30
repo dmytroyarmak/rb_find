@@ -15,20 +15,20 @@ Example:
 
 will return (at least):
 
-`/sbin
-/sys`
+`/sbin`
+`/sys`
 
 Invocation: find.rb DIRECTORY [OPTS]
 
 Mandatory options:
 
-`--name ARG : Where ARG is an extended regexp ("file-.." matches "file-XX" and "files-42"). Predicate matches if browsed file name matches.
---type ARG : (ARG == "f" or ARG == "d", for file and directory respectively). Predicate matches if browsed file is of desired type.`
+`--name ARG : Where ARG is an extended regexp ("file-.." matches "file-XX" and "files-42"). Predicate matches if browsed file name matches.`
+`--type ARG : (ARG == "f" or ARG == "d", for file and directory respectively). Predicate matches if browsed file is of desired type.`
 
 Bonus options :
 
-`--cnewer PATH : Predicate matches if browsed file is newer than the file at PATH.
---type ARG : Handle "l" for symbolic link and "s" for socket
---user UNAME : Predicate matches if browsed file is owned by UNAME
---maxdepth N : Do no go deeper than N subdirectories while crawling DIRECTORY`
+`--cnewer PATH : Predicate matches if browsed file is newer than the file at PATH.`
+`--type ARG : Handle "l" for symbolic link and "s" for socket`
+`--user UNAME : Predicate matches if browsed file is owned by UNAME`
+`--maxdepth N : Do no go deeper than N subdirectories while crawling DIRECTORY`
 
